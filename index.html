@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tube Go</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="logo.png">
+</head>
+<body>
+
+    <header>
+        <img src="logo.png" alt="Logo tube" class="logo">
+        <h1>Tube Go</h1>
+        <p class="video-author">by Mannn</p>
+        <input type="text" placeholder="Cari..." class="search-bar">
+    </header>
+
+    <div class="video-list">
+        <!-- Video 1 -->
+        <div class="video-item" onclick="playVideo('1KBHfwjmuzri0hHEQuxfhnOv-AS7zRLUJ')">
+            <img class="thumbnail" src="tmn1.jpg" alt="Thumbnail">
+            <div class="video-info">
+                <h3 class="video-title">Doraemon the simpony</h3>
+                <p class="video-author">jika mau full screen aktifkan rotasi layar</p>
+                <p class="video-views">220 ribu x ditonton • 4 bulan yang lalu</p>
+            </div>
+        </div>
+
+        <!-- Video 2 -->
+        <div class="video-item" onclick="playVideo('1QFenf1kYaU51xwLJ_G6KsoWTs6RE4TZq')">
+            <img class="thumbnail" src="tmn2.jpg" alt="Thumbnail">
+            <div class="video-info">
+                <h3 class="video-title">Vidio mendaki</h3>
+                <p class="video-author">Yuro Cam</p>
+                <p class="video-views">723 ribu x ditonton • 3  tahun yang lalu</p>
+            </div>
+        </div>
+    
+            <!-- Video 3 -->
+        <div class="video-item" onclick="playVideo('1YbnzbGhuN65NEE_2ToQKLZ4ng-y9N2G1')">
+            <img class="thumbnail" src="tmn3.jpg" alt="Thumbnail">
+            <div class="video-info">
+                <h3 class="video-title">Blue yungkai</h3>
+                <p class="video-author">Mannn</p>
+                <p class="video-views">878 ribu x ditonton • 3  bulan yang lalu</p>
+            </div>
+        </div>
+    
+            <!-- Video 4 -->
+        <div class="video-item" onclick="playVideo('1V1-70f8qGwGjoxGRUPyppNH-7uacSXzS')">
+            <img class="thumbnail" src="tmn4.jpg" alt="Thumbnail">
+            <div class="video-info">
+                <h3 class="video-title">Playlist TikTok 2024 Yang Kamu Cari - Denger Playlist Sambil Ngelamunin Masa Lalu 🌴🌴🌴</h3>
+                <p class="video-author">Menantie Music 2025</p>
+                <p class="video-views">791 ribu x ditonton • 4  bulan yang lalu</p>
+            </div>
+        </div>
+
+    <!-- Pemutar Video Modal -->
+    <div class="video-modal" id="videoModal">
+        <div class="video-container">
+            <span class="close-btn" onclick="closeVideo()">&times;</span>
+            <iframe id="videoPlayer" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
